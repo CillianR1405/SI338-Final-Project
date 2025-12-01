@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cillian's Library</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="logo">
+        <img src="images/books_icon.png" alt="Cillian's Library Logo">
+    </a>
+
+    <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="comingsoon.html">Coming Soon</a></li>
+    <li><a href="recommendation.html">Recommendations</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    </ul>
+</nav>
+
+
+<main>
+    <div class="recommendation">
+    <h1 style="text-align: center;">Recommendations</h1>
+    <div class="rec-buttons">
+            <button class="fantasy">Fantasy</button>
+            <button class="scifi">Science Fiction</button>
+            <button class="classic">Classics</button>
+            <button class="mystery">Mystery</button>
+    </div>
+        <div id="recommendation-card" class="rec-card">
+            <h2 id="rec-title">Select a genre to get a recommendation!</h2>
+            <img id="rec-img" class="rec-img" src="" alt="" style="display:none;">
+            <p id="author-p" style="display:none;">
+                <strong>Author:</strong> <span id="rec-author"></span>
+            </p>
+            <p id="rec-desc"></p>
+        </div>
+
+    </div>
+</main>
+
+    <script src="js/style.js"></script>
+</body>
+</html>

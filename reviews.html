@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cillian's Library</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html" class="logo">
+        <img src="images/books_icon.png" alt="Cillian's Library Logo">
+    </a>
+
+    <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="comingsoon.html">Coming Soon</a></li>
+    <li><a href="recommendation.html">Recommendations</a></li>
+    <li><a href="reviews.html">Reviews</a></li>
+    </ul>
+</nav>
+
+
+<main class="reviews-main">
+
+<h1 style="text-align:center;">Write a Review</h1>
+
+<div class="review-form">
+    <label for="book-title">Book Title</label>
+    <input type="text" id="book-title" placeholder="Book Title" required>
+
+    <label for="rating">Rating</label>
+    <select id="rating">
+        
+        <option value="" disabled selected>Choose a Rating</option>
+        <option value="1">⭐️</option>
+        <option value="2">⭐️⭐️</option>
+        <option value="3">⭐️⭐️⭐️</option>
+        <option value="4">⭐️⭐️⭐️⭐️</option>
+        <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+    </select>
+    <label for="review-text">Your Review</label>
+    <textarea id="review-text" placeholder="Write your review..." required></textarea>
+
+    <button id="submit-review">Submit Review</button>
+</div>
+
+<h2 style="text-align:center;">User Reviews</h2>
+<div id="reviews-container" class="reviews-grid">
+    
+</div>
+
+</main>
+
+
+
+    <script src="js/style.js"></script>
+</body>
+</html>
